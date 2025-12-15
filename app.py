@@ -12,12 +12,9 @@ from streamlit_option_menu import option_menu
 
 
 #loading the saved models
-diabetes_model = pickle.load(open("/Users/satyamgajjar/Library/Mobile Documents/com~apple~CloudDocs/Satyam's Mac/Learnings/Data Science/Code With Harry - Data Science/14 Practicing ML using Scikit-learn/20 Projects/22 Deploy ML Project Streamlit - Multiple Disease Prediction System/diabetes_model.sav", "rb"))
-
-heartdisease_model = pickle.load(open("/Users/satyamgajjar/Library/Mobile Documents/com~apple~CloudDocs/Satyam's Mac/Learnings/Data Science/Code With Harry - Data Science/14 Practicing ML using Scikit-learn/20 Projects/22 Deploy ML Project Streamlit - Multiple Disease Prediction System/heartdisease_model.sav", "rb"))
-
-parkinsons_model = pickle.load(open("/Users/satyamgajjar/Library/Mobile Documents/com~apple~CloudDocs/Satyam's Mac/Learnings/Data Science/Code With Harry - Data Science/14 Practicing ML using Scikit-learn/20 Projects/22 Deploy ML Project Streamlit - Multiple Disease Prediction System/parkinson_model.sav", "rb"))
-
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+heartdisease_model = pickle.load(open('heartdisease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinson_model.sav', 'rb'))
                                     
 #sidebar for navigation
 with st.sidebar:
